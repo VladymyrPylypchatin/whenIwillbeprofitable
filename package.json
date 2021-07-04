@@ -9,9 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.5.2",
+    "antd": "^4.16.2",
+    "chart.js": "^3.3.2",
+    "chartjs-plugin-annotation": "^1.0.2",
     "next": "11.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-chartjs-2": "^3.0.3",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^6.15.7",
+    "sass": "^1.35.1",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "eslint": "7.30.0",

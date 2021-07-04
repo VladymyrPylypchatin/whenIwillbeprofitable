@@ -1,0 +1,86 @@
+.InputText {
+    width: 100%;
+    margin-bottom: 15px;
+
+    &__label {
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    &_disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    .input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 45px;
+        border-radius: 12px;
+        //background: $purple4;
+        //border: 2px solid $purple7;
+
+        // padding-left: 15px;
+        // padding-right: 15px;
+        cursor: pointer;
+        margin-bottom: 5px;
+        //border:1px solid red;
+
+        input {
+            position: absolute;
+            box-shadow: none;
+            border: none;
+            outline: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: #17141f;
+            background: white;
+            border: 2px solid grey;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &::placeholder {
+                font-size: 18px;
+                line-height: normal !important;
+            }
+
+            ::-webkit-input-placeholder {
+                line-height: normal !important;
+            }
+
+            &:focus {
+                border: 2px solid #3055ec;
+            }
+        }
+
+        // &:focus-within {
+
+        // }
+    }
+
+    .InputError {
+        input {
+            border: 2px solid red !important;
+        }
+    }
+
+    &__rightIcon {
+        position: absolute;
+        z-index: 10;
+        height: 100%;
+        right: 15px;
+        top: 8px;
+        // display: flex;
+        // align-items: center;
+
+        img {
+            cursor: pointer;
+            height: 20px;
+        }
+    }
+}
